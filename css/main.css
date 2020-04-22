@@ -1,6 +1,6 @@
 :root {
   --white-color: #f8f8f8;
-  --ligth-color: #e2e0e0;
+  --ligth-color: #F2F2F2;
   --dark-color: #202020;
   --grey-color: #585858;
   --grey-ligth-color:#858585; 
@@ -29,6 +29,7 @@ html {
 body {  
   font-family: var(--font-primary);  
   color: var(--dark-color);
+  line-height: 1.6;
 }
 
 .container {
@@ -66,8 +67,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
-  letter-spacing: .1em; 
+  font-size: 2rem;  
   padding: 1rem 0; 
 }
 
@@ -84,9 +84,10 @@ p {
 .btn {
   display: inline-block;
   margin: 1rem 0;
-  padding: .8rem 2rem;  
+  padding: .8rem 2.4rem;  
   border-radius: 5px;
   text-transform: capitalize; 
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
@@ -126,22 +127,26 @@ i {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  cursor: pointer; 
+  cursor: pointer;
+  padding: .5rem;
+  background: var(--dark-color); 
 }
 
-.fa-times-circle{
+.fa-times{
   visibility: hidden;
+  border-radius: 50%;
 } 
 
 .nav__list {
+  max-width: 80rem;
   display: none; 
-  margin: 0;    
+  margin: 0 auto;    
   text-align: center; 
 }
 
 .nav__item {
   list-style-type: none;
-  padding: 0 .5rem;
+  padding: 0 1rem;
   margin: .5rem 0;  
 }
 
@@ -193,7 +198,7 @@ i {
 }
 
 .features__item {
-  max-width: 60%;
+  max-width: 70%;
   margin: 0 auto;
   text-align: center;
   background: var(--ligth-color); 
@@ -233,7 +238,7 @@ i {
 
 /*******************services*****************/
 .services {
-  height: 80vh;
+  height: 60vh;
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/bg-services.jpg') center center no-repeat fixed;
   background-size: cover; 
   display: flex;
@@ -246,7 +251,8 @@ i {
 
 .services__header {
   color: var(--white-color);
-  max-width: 90%;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .services__items {
@@ -261,15 +267,18 @@ i {
   margin: 0 auto;
   text-align: center;
   background: var(--ligth-color); 
+  padding-bottom: 2rem;
 }
 
 .services__item:nth-last-of-type(1) {
-  max-width: 90%;
+  max-width: 90%;  
 }
 
-.services__item p {
-  padding: 1rem 2rem;
+.services__item-content {
+  padding: 1rem 2rem 0 2rem;
+  text-align: left;
 }
+
 
 /*******************contact*****************/
 .contact {  
@@ -327,6 +336,12 @@ i {
   color: var(--dark-color);   
 }
 
+::placeholder {
+  color: var(--dark-color);
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+}
+
 /*******************footer*****************/
 .footer {
   text-align: center;
@@ -334,6 +349,8 @@ i {
 }
 
 .footer__content {
+  max-width: 30rem;
+  margin: 0 auto;
   font-style: italic;
   padding: 3rem 0;
 }
@@ -346,7 +363,11 @@ i {
 }
 
 .footer__atribution {
-  font-size: .5rem;
+  border-top: 1px solid var(--ligth-color);
   padding-top: 2rem;
+}
+
+.footer__atribution > * {
+  font-size: 1rem;
 }
 

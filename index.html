@@ -14,27 +14,50 @@
   <header>
     <nav class="nav">
       <div class="container">
-        <span onclick="toggleMenu()" class="nav__toggle" id="js-nav-toggle">
-          <i class="fas fa-bars fa-lg" id="js-bars"></i>
-          <i class="fas fa-times fa-lg" id="js-times"></i>
+        <span onclick="toggleMenu()" class="nav__toggle">
+          <i class="fas fa-bars" id="js-bars"></i>
+          <i class="fas fa-times" id="js-times"></i>
         </span>
-        <ul class="nav__list" id="js-menu">
-          <li class="nav__item">
-            <a href="#homepage" class="nav__link">Homepage</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Us</a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">External</a>
-          </li>
-        </ul>
+        <!--nav mobile-->
+        <div id="nav__collapsed">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#homepage" class="nav__link" onclick="toggleMenu()">Homepage</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link" onclick="toggleMenu()">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link" onclick="toggleMenu()">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link" onclick="toggleMenu()">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link" onclick="toggleMenu()">External</a>
+            </li>
+          </ul>
+        </div>
+        <!--nav desktop-->
+        <div id="nav__desktop">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#homepage" class="nav__link">Homepage</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">External</a>
+            </li>
+          </ul>
+        </div>        
       </div>
     </nav>
   </header>
@@ -216,8 +239,8 @@
           <q>Conquer is free Bootstrap template from templatemo website.
           No backlink is required to use this layout.</q>       
         </div>
-        <div class="footer__arrow" id="footer-arr">
-          <a href="#homepage"><img src="./img/top.png" alt="arrow up"></a>
+        <div class="footer__arrow" id="footer-arr">          
+          <a href="#homepage"><i class="fas fa-chevron-circle-up"></i></a>
         </div>
       </div>
       <div class="container">

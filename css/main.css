@@ -9,7 +9,7 @@
   --red-color: #a03529;
 
   --font-primary: 'Open Sans', sans-serif;
-  --max-width: 1240px;
+  --max-width: 1024px;
 }
 
 *,
@@ -40,6 +40,10 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 img {
@@ -108,28 +112,31 @@ p {
 }
 
 /*******************navigation*****************/
-.nav {
-  background: var(--grey-color);  
-  position: fixed;
-  width: 100%;
-  top: 0; 
+.nav { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
   z-index: 1;
 }
 
-.nav__toggle {
-  display: inline-block;
-  height: 4rem;
-  background: var(--grey-color); 
-}
-
-i {
+.nav__toggle i {
   color: var(--white-color);
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
   cursor: pointer;
   padding: .5rem;
-  background: var(--dark-color); 
+  background: var(--grey-color); 
+  border-radius: 5px;
+  border: 1px solid var(--white-color);
+  z-index: 10;
+  font-size: 2rem;
+}
+
+.nav__toggle i:hover {
+  filter: brightness(120%);
+  transition: .5s ease-in;
 }
 
 .fa-times{
@@ -137,32 +144,45 @@ i {
   border-radius: 50%;
 } 
 
-.nav__list {
-  max-width: 80rem;
-  display: none; 
-  margin: 0 auto;    
-  text-align: center; 
+#nav__desktop {
+  visibility: hidden;
 }
 
-.nav__item {
-  list-style-type: none;
-  padding: 0 1rem;
-  margin: .5rem 0;  
+#nav__collapsed {  
+  opacity: 0;
+  margin: -8rem;
+  width: 100%;
+} 
+
+#nav__collapsed .nav__list {
+  margin: 0 auto;  
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  max-width: 100%;
+  background: var(--grey-color);      
 }
 
-.nav__link {
+#nav__collapsed .nav__item {
+  width: 100%;
+  text-align: center;    
+  border-bottom: 1px solid var(--white-color);    
+}
+
+#nav__collapsed .nav__link {
   display: inline-block;
-  width: 70%;
-  padding: .8rem 1rem;
-  color: var(--white-color);
-  border: 1px solid var(--white-color);     
-  font-size: 1.2rem;  
+  width: 100%;
+  color: var(--white-color);   
+  font-size: 1.4rem;  
+  padding: .5rem 0;    
 }  
 
 .nav__link:hover,
 .nav__item .active {
-  background: var(--grey-ligth-color);
-  border: 1px dotted var(--white-color);
+  background: var(--grey-ligth-color);  
 }
 
 :target[id]::before {
@@ -357,9 +377,10 @@ i {
 
 .footer__arrow {
   position: fixed;
-  bottom: 50px;
-  right: 30px;    
-  height: 20px;  
+  bottom: 2rem;
+  right: 2rem;   
+  color: var(--grey-color);
+  font-size: 2.5rem;
 }
 
 .footer__atribution {

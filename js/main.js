@@ -1,23 +1,24 @@
 // toggle menu on click on the menu icon to display the menu or hide
-const mainNav = document.getElementById("js-menu");
+const navCollapsed = document.getElementById("nav__collapsed");
+// const navDesktop = document.getElementById("nav__desktop");
 const bars = document.getElementById("js-bars");
 const times = document.getElementById("js-times");
-const navLink = document.querySelectorAll("nav__link");
+
+let navStatus = true; 
 
 function toggleMenu() {
-  if (mainNav.style.display === "none") {
-    mainNav.style.display = "block";
+  if (navStatus === false) {
+    navCollapsed.style.opacity = 1;
     bars.style.visibility = "hidden";
-    times.style.visibility = "visible";    
+    times.style.visibility = "visible";   
+    navStatus = true;
+
   } else {
-    mainNav.style.display = "none";
+    navCollapsed.style.opacity = 0;
     times.style.visibility = "hidden";
     bars.style.visibility = "visible";
+    navStatus = false;
   }
-  // TODO - onclick close the menu back to display none
-  navLink.onclick(function()  {
-    mainNav.style.display = "none";
-  });
 }
 
 // parallax effect - to scroll images at different speed than the foreground content when scrolling

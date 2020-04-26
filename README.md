@@ -29,11 +29,11 @@ Clone of template webpage [Conquer](https://www.free-css.com/free-css-templates/
 
 * HTML5
 * CSS3
-* vanilla JS
+* vanilla Javascript
 * Flexbox, Grid
 * BEM
 * Responsive
-* Media queries
+* Mobile first
 * Parallax effect
 
 <!-- GETTING STARTED -->
@@ -74,7 +74,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Marketa Stankova [@twitter_handle](https://twitter.com/StankovaMarketa)
+Marketa Stankova [@StankovaMarketa](https://twitter.com/StankovaMarketa)
 
 Project Link [https://github.com/mstanka/ch-conquer-clone](https://github.com/mstanka/ch-conquer-clone)
 

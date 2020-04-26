@@ -54,8 +54,8 @@ img {
 h1 {
   text-transform: uppercase;
   color: var(--white-color);
-  font-size: 4.5rem;  
-  font-weight: 300; 
+  font-size: 5rem;  
+  font-weight: 400; 
   letter-spacing: .1em;     
   margin: .5rem 0;      
   text-shadow: 2px 2px 2px var(--dark-color);

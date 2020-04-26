@@ -1,9 +1,7 @@
 // toggle menu on click on the menu icon to display the menu or hide
 const navCollapsed = document.getElementById("nav__collapsed");
-// const navDesktop = document.getElementById("nav__desktop");
 const bars = document.getElementById("js-bars");
 const times = document.getElementById("js-times");
-
 let navStatus = true; 
 
 function toggleMenu() {

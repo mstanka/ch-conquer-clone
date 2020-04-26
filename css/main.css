@@ -30,6 +30,7 @@ body {
   font-family: var(--font-primary);  
   color: var(--dark-color);
   line-height: 1.6;
+  font-size: 1.6rem;
 }
 
 .container {
@@ -113,6 +114,7 @@ p {
 
 /*******************navigation*****************/
 .nav { 
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,8 +125,8 @@ p {
 .nav__toggle i {
   color: var(--white-color);
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1rem;
   cursor: pointer;
   padding: .5rem;
   background: var(--grey-color); 
@@ -157,12 +159,13 @@ p {
 #nav__collapsed .nav__list {
   margin: 0 auto;  
   position: fixed;
-  top: 0rem;
+  top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   width: 100%; 
   max-width: 100%;
+  padding-top: 1rem;
   background: var(--grey-color);      
 }
 
@@ -183,6 +186,7 @@ p {
 .nav__link:hover,
 .nav__item .active {
   background: var(--grey-ligth-color);  
+  transition: .5s ease-in;
 }
 
 :target[id]::before {
@@ -194,7 +198,7 @@ p {
 
 /*******************home*****************/
 .intro {
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/bg-home.jpg') center center no-repeat fixed;
   background-size: cover;
   z-index: -10;
@@ -253,7 +257,7 @@ p {
 }
 
 .features__item-description{
-  padding: 1rem 2rem;   
+  padding: 1rem 2.5rem;   
 }  
 
 /*******************services*****************/
@@ -377,8 +381,8 @@ p {
 
 .footer__arrow {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;   
+  bottom: 1rem;
+  right: 1rem;   
   color: var(--grey-color);
   font-size: 2.5rem;
 }

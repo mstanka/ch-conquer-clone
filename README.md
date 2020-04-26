@@ -4,7 +4,8 @@
 
 ## CHINGU PREWORK | TIER 1
 
-[Explore the docs](https://github.com/mstanka/ch-conquer-clone)
+|| [Explore the repo](https://github.com/mstanka/ch-conquer-clone) ||
+[View demo](https://mstanka.github.io/ch-conquer-clone/) ||
 
 ----
 
@@ -12,7 +13,7 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+  * [Built With and Used Technologies](#built-with)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
 * [Contributing](#contributing)
@@ -24,7 +25,7 @@
 
 Clone of template webpage [Conquer](https://www.free-css.com/free-css-templates/page196/conquer) to practice making modern looking web apps without Bootstrap, JQuery or any other library.
 
-### Built With
+### Built With and Used Technologies
 
 * HTML5
 * CSS3

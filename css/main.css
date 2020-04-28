@@ -387,7 +387,15 @@ p {
   bottom: 1rem;
   right: 1rem;   
   color: var(--grey-color);
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.footer__arrow i {
+  color: var(--grey-color);
+}
+
+.footer__arrow i:hover {
+  color: var(--dark-color);
 }
 
 .footer__atribution {

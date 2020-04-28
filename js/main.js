@@ -1,20 +1,20 @@
 // toggle menu on click on the menu icon to display the menu or hide
 const navCollapsed = document.getElementById("nav__collapsed");
-const bars = document.getElementById("js-bars");
-const times = document.getElementById("js-times");
+const menuOpen = document.getElementById("js-menu-open");
+const menuClose = document.getElementById("js-menu-close");
 let navStatus = true; 
 
 function toggleMenu() {
   if (navStatus === false) {
     navCollapsed.style.opacity = 1;
-    bars.style.visibility = "hidden";
-    times.style.visibility = "visible";   
+    menuOpen.style.visibility = "hidden";
+    menuClose.style.visibility = "visible";   
     navStatus = true;
 
   } else {
     navCollapsed.style.opacity = 0;
-    times.style.visibility = "hidden";
-    bars.style.visibility = "visible";
+    menuClose.style.visibility = "hidden";
+    menuOpen.style.visibility = "visible";
     navStatus = false;
   }
 }

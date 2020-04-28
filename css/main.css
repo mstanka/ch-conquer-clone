@@ -120,9 +120,10 @@ p {
   align-items: center;
   max-width: 100%;
   z-index: 1;
+  color: var(--white-color);
 }
 
-.nav__toggle i {
+.nav__toggle i { 
   color: var(--white-color);
   position: fixed;
   top: 1rem;
@@ -141,9 +142,11 @@ p {
   transition: .5s ease-in;
 }
 
-.fa-times{
+.nav__close {
   visibility: hidden;
-  border-radius: 50%;
+  border-radius: 50%;  
+  width: 3rem;
+  text-align: center;
 } 
 
 #nav__desktop {
